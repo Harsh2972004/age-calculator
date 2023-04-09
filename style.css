@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-LBold;
+    src: url(/assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url(/assets/fonts/Poppins-Italic.ttf);
+}
+
+body {
+    background-color: hsl(0, 1%, 44%);
+}
+
+
+/* .container styling */
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    height: 80vh;
+    width: 50%;
+    margin: 90px auto;
+    padding: 4%;
+    border-radius: 25px 25px 150px 25px;
+}
+
+/* input styling */
+
+.labels {
+    display: block;
+    color: hsl(0, 1%, 44%);
+    font-family: Poppins-LBold;
+    margin-bottom: 8px;
+}
+
+input {
+    font-size: 2rem;
+    width: 150px;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.inputFields {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.inputFields:first-child {
+    margin-left: 0;
+}
+
+.submit-area {
+    margin-top: 40px;
+    position: relative;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+button {
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 100%;
+    padding: 15px;
+    position: absolute;
+    right: -20px;
+    top: -35px;
+}
+
+/* result section styling */
+ .result-p {
+    font-size: 4.7rem;
+    font-family: Poppins-Bold;
+ }
+
+ span {
+    font-family: Poppins-Bold;
+    color: hsl(259, 100%, 65%);;
+ }
+
+ /* error styling */
+ .error-style {
+    color: hsl(0, 100%, 67%);
+    margin-top: 4px;
+    display: none;
+    font-family: Poppins-Italic;
+    font-size: 14px;
+ }
+
+.show {
+display: block;
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+}
+
+
+/* footer styling */
+.attribution { 
+    font-size: 13px;
+    text-align: center; 
+    background-color: hsl(0, 0%, 8%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-text {
+    color: hsl(0, 0%, 94%);
+  }
+  .attribution a { 
+    color: hsl(228, 98%, 82%); 
+  }
+
+/* removing arrows in input tags */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        text-align: center;
+        height: auto;
+        margin-top: 120px;
+    }
+
+    input {
+        font-size: 1.5rem;
+        width: 80px;
+    }
+
+    .labels {
+        width: 80px;
+    }
+
+
+    .inputFields {
+        margin: 0 15px 0 0;
+        width: 80px;
+    }
+
+    button{
+        padding: 10px;
+        right: 40%;
+    }
+
+    .submit-area {
+        margin-bottom: 40px;
+    }
+
+    .result-p {
+        font-size: 3rem;
+    }
+
+    .result-area {
+        margin-bottom: 20px;
+    }
+}

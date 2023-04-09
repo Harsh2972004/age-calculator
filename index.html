@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <form id="myForm">
+      <div class="inputFields">
+        <label class="labels label1" for="dayInput">DAY</label>
+        <input type="number" id="dayInput" placeholder="DD" name="day" data-day>
+        <p class="error-style fieldRequired1">This field is required.</p>
+      </div>
+      <div class="inputFields">
+        <label class="labels label2" for="monthInput">MONTH</label>
+        <input type="number" id="monthInput" placeholder="MM" name="month" data-month>
+        <p class="error-style fieldRequired2">This field is required.</p>
+      </div>
+      <div class="inputFields">
+        <label class="labels label3" for="yearInput">YEAR</label>
+        <input type="number" id="yearInput" placeholder="YYYY" name="year" data-year>
+        <p class="error-style fieldRequired3">This field is required.</p>
+      </div>
+
+      <div class="submit-area">
+        <hr>
+        <button type="submit" id="sub-btn"><img src="assets/images/icon-arrow.svg" alt="arrow"></button>
+      </div>
+    </form>
+
+  <div class="result-area">
+    <p class="result-p"><span id="result-years">--</span> years</p>
+    <p class="result-p"><span id="result-months">--</span> months</p>
+    <p class="result-p"><span id="result-days">--</span> days</p>
+  </div>
+  
+  
+
+  </div>
+  <div class="attribution">
+    <p class="footer-text">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Harsh</a>.</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
