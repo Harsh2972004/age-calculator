@@ -83,13 +83,14 @@ button {
  .error-style {
     color: hsl(0, 100%, 67%);
     margin-top: 4px;
-    display: none;
+    visibility: hidden;
     font-style: italic;
     font-size: 14px;
  }
 
 .show {
-display: block;
+visibility: visible;
+
 }
 
 .red {
