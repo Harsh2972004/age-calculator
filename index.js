@@ -7,13 +7,13 @@ var validYear = false;
 
 const checkValidInput = function (input, minValue, maxValue, field, label , errorMessage){
     if (+input === 0) {
-        $(".error-style").fadeIn(300, function () {
+        $(field).fadeIn(300, function () {
             $(field).addClass("show");
             $(label).addClass("red");
         });
     }
     else if (+input < +minValue || +input > +maxValue) {
-        $(".error-style").fadeIn(300, function () {
+        $(field).fadeIn(300, function () {
             if (minValue === 100 && input < minValue){
                 $(field).text("must be a 3 digit number.")
             }
